@@ -1,0 +1,177 @@
+:root{
+
+ --bg1: #d69e8d;
+ --bg2: rgb(189, 149, 139);
+--body: rgb(27, 28, 27);
+--brand: #dce794;
+--white: rgb(220, 183, 183);
+--p: rgb(85, 77, 77);
+}
+
+body{
+    background-color: var(--bg1);
+}
+
+a{
+   text-decoration: none;
+
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#banner{
+    min-height: 100vh;
+    background: linear-gradient(to right, hsla(0, 3%, 46%, 0.856),rgba(227, 206, 206, 0.315)),
+     url('https://img.freepik.com/free-photo/close-up-woman-drawing-mehndi-tattoo-female-chest_23-2148083174.jpg?w=996&t=st=1711336043~exp=1711336643~hmac=af264bf36418c01fd3eb732421bc4f75616fe8161b505b5087f50e46fe10e542');
+    height: 100vh;
+    background-size: cover; }
+/* */
+.navbar{
+    background: linear-gradient(to bottom, hsla(0, 2%, 39%, 0.829), rgba(44,42,42,0.884));
+}
+.btn { 
+    padding: 15px 30px;
+    transition: all 0.4s ease;
+    font-weight:800;
+    border-radius: 0;
+ }
+
+.btn-brand {
+   background-color: var(--bg1);
+ }
+
+ .btn-brand:hover{
+    background-color:transparent;
+    color: var(--brand);
+    border-color: var(--brand);
+
+ }
+ #services{
+    background: var(--bg2);
+ }
+#about{
+    background: var(--bg1);
+}
+
+.icon-box-img{
+    width: 40%;
+}
+
+.btn-outline-brand{
+    background-color:  var(--brand);
+    color:var(--bg);
+    border-color: var(--bg);
+}
+.btn-outline-brand:hover {
+  background-color: var(--brand);
+  color: var(--bg1);
+
+}
+.card{
+  transition: background-color 0.3s,color 0.3s;
+
+}
+
+.card:hover{
+   background-color: var(--bg1);
+
+}
+.card:hover .card-title,
+.card:hover .card-text,
+.card:hover .btn {
+    color: antiquewhite;
+}
+
+#cta{
+    position: relative;
+    opacity: 0.90;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* parallax effect */
+    background-attachment: fixed;
+    /*parallax effect / to remove to effect set to normal */ 
+    background-image: url('https://img.freepik.com/free-photo/close-up-woman-drawing-mehndi-tattoo-female-chest_23-2148083174.jpg?w=996&t=st=1711336043~exp=1711336643~hmac=af264bf36418c01fd3eb732421bc4f75616fe8161b505b5087f50e46fe10e542');
+    min-height: 70vh;
+}
+
+
+
+#reviews {
+    background-color: var(--white);
+    
+}
+.Testimonial {
+    background-color: var(--bg2);
+    padding: 30px;
+}
+
+.Testimonial img {
+    width: 65px;
+    border-radius: 100px;
+    height: 65px;
+}
+
+#reviews a {
+    color: var(--brand);
+}
+
+.faq-section{
+    max-width: 800px;
+    margin: auto;
+
+}
+.accordion-item {
+   margin-bottom: 20px;
+   border-radius: 0;
+}
+.accordion-button {
+   background-color: rgb(73, 104, 104);
+   border: none;
+   border-bottom: 1px salmon;
+   border-radius: 0;
+   padding: 15px;
+   font-size: 18;
+   font-weight: 500;
+   color: rgb(147, 147, 137);
+   cursor: pointer;
+   transition: background-color 0.3s, color 0.3s;
+}
+.accordion-body {
+   border-left: 3px solid var(--brand);
+   padding: 10px 15px;
+   margin-left: 0;
+   background-color: blanchedalmond;
+}
+.faq-answer p {
+   margin: bottom 0;
+}
+.accordion-button:focus {
+   box-shadow: none;
+}
+.accordion-button:not(.collapsed) {
+   color: var(--bg1);
+}
+
+/* Hover effect for FAQ questions */
+.accordion-button:hover {
+   background-color: var(--brand); /* Change background color on hover */
+   color: var(--bg1); /* Change text color on hover */
+}
+
+/* Adjust accordion icon */
+.accordion-button::after{
+   font-family: "Font Awesome 5 Free";
+   content: ""; /* Plus icon */
+   float: right;
+   font-weight: 900;
+   margin-left: auto;
+}
+.accordion-button[aria-expanded="true"]::after{
+    content: ""; /* Minus icon */
+
+}
+
+
