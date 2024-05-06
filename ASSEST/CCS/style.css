@@ -39,7 +39,7 @@ section {
  }
 
 .btn-brand {
-   background-color: var(--bg1);
+   background-color: #fff;
  }
 
  .btn-brand:hover{
@@ -100,7 +100,7 @@ section {
 
 
 #reviews {
-    background-color: var(--white);
+    background-color: #FFF;
     
 }
 .Testimonial {
@@ -172,6 +172,29 @@ section {
 .accordion-button[aria-expanded="true"]::after{
     content: ""; /* Minus icon */
 
+}
+
+footer {
+    padding: 50px 20px;
+}
+
+footer a {
+    color: #fff;
+}
+
+@media screen and (max-width:767px) {
+    section {
+        padding: 60px 10px;
+
+    }
+
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    
+    
 }
 
 
